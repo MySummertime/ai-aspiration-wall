@@ -1,0 +1,9 @@
+{
+  "name": "aiGen",
+  "version": "1.0.0",
+  "description": "HTTP 版灵感卡片生成云函数（免鉴权 HTTP 访问服务，绕开 Web SDK 的云函数调用权限限制）",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "3.0.5-beta.1"
+  }
+}

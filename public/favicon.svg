@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!--
+    favicon：暖米色底 + 赭红卡片，呼应应用主色
+    卡片上的三条线代表"结构化卡片"的内容
+  -->
+  <rect width="64" height="64" rx="14" fill="#FFF8F0"/>
+  <rect x="12" y="14" width="40" height="36" rx="5" fill="#E8613C"/>
+  <!-- 标题线 -->
+  <rect x="19" y="22" width="20" height="3.5" rx="1.75" fill="#FFF8F0"/>
+  <!-- 金句线 -->
+  <rect x="19" y="30" width="26" height="2.5" rx="1.25" fill="#FFF8F0" opacity="0.85"/>
+  <!-- 配色色块 -->
+  <rect x="19" y="37" width="5" height="5" rx="1.5" fill="#F2A65A"/>
+  <rect x="26" y="37" width="5" height="5" rx="1.5" fill="#FFF8F0" opacity="0.7"/>
+  <rect x="33" y="37" width="5" height="5" rx="1.5" fill="#FFF8F0" opacity="0.45"/>
+</svg>

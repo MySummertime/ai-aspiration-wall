@@ -1,0 +1,9 @@
+{
+  "name": "genCard",
+  "version": "1.0.0",
+  "description": "生成灵感卡片的中转云函数（规避小程序成长计划的 Web SDK 渠道限制）",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "3.0.5-beta.1"
+  }
+}

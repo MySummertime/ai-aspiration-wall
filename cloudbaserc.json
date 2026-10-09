@@ -1,0 +1,18 @@
+{
+  "envId": "wechat-program-d8gbjr6963d3c1a0b",
+  "functionRoot": "./cloudfunctions",
+  "functions": [
+    {
+      "name": "genCard",
+      "timeout": 30,
+      "memorySize": 512,
+      "description": "生成灵感卡片的中转云函数（规避小程序成长计划的 Web SDK 渠道限制）"
+    },
+    {
+      "name": "aiGen",
+      "timeout": 30,
+      "memorySize": 512,
+      "description": "HTTP 版灵感卡片生成函数（免鉴权 HTTP 访问服务，绕开匿名用户无云函数权限的问题）"
+    }
+  ]
+}

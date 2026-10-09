@@ -1,0 +1,41 @@
+{
+  "name": "ai-inspiration-wall",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "setup": "./scripts/setup.sh",
+    "cf:install": "npm --prefix cloudfunctions/genCard install && npm --prefix cloudfunctions/aiGen install",
+    "deploy:hosting": "./scripts/tcb.sh hosting deploy ./dist",
+    "deploy:aiGen": "./scripts/tcb.sh fn deploy aiGen --dir ./cloudfunctions/aiGen --path /aiGen --runtime Nodejs20.19 --install-dependency false --force",
+    "deploy:genCard": "./scripts/tcb.sh fn deploy genCard --dir ./cloudfunctions/genCard --runtime Nodejs20.19 --install-dependency false --force"
+  },
+  "dependencies": {
+    "@cloudbase/js-sdk": "^2.21.0",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
